@@ -1,6 +1,6 @@
 class TrieNode {
     private HashMap<Character, TrieNode> children = new HashMap<>();
-    public boolean isEnd = false; // "public" for simplicity
+    private boolean isEnd = false;
 
     public void putChildIfAbsent(char ch) {
         children.putIfAbsent(ch, new TrieNode());
