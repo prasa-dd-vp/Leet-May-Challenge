@@ -6,7 +6,7 @@ class Solution {
             minEndingHere = A[0],
             total = A[0];
         
-        for (int i=1, len=A.length; i<len; i++){
+        for (int i=1, len=A.length; i<len; i++) {
             total += A[i];
             
             maxEndingHere = Math.max(maxEndingHere+A[i], A[i]);
